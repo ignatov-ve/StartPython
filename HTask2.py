@@ -99,34 +99,36 @@
 
 # Task 6
 
-a = int(input('Введите количество товаров: '))
-i = 1
-my_list_fin = list()
-my_dict_new = list()
-while i <= a:
-    my_dict = {'Название': ' ', 'Цена': ' ', 'Количество': ' ', 'Ед.изм.': ' '}
-    b = input('Введите НАЗВАНИЕ товара: ')
-    my_dict.update({'Название':b})
-    c = input('Введите цену товара: ')
-    my_dict.update({'Цена':c})
-    d = input('Введите количество товара: ')
-    my_dict.update({'Количество':d})
-    e = input('Введите ед.изм. товара: ')
-    my_dict.update({'Ед.изм.':e})
-    my_korteg = (i, my_dict)
-    i += 1
-    my_list_fin.append(my_korteg)
-    my_dict_new.append(my_dict)
-print(my_list_fin)
-print(my_dict_new)
-resultdict = [{}]
-for x in my_dict_new:
-    for y in x:
-        if y in resultdict[0]:
-            resultdict[0][y].append(x[y])
-            resultdict[0][y].sort()
-        else:
-            resultdict[0][y]=[x[y]]
-f = list(set(resultdict[0].get('Ед.изм.')))
-resultdict[0].update({'Ед.изм.':f})
-print(resultdict)
+# a = int(input('Введите количество товаров: '))
+# i = 1
+# my_list_fin = list()
+# my_dict_new = list()
+# while i <= a:
+#     my_dict = {'Название': ' ', 'Цена': ' ', 'Количество': ' ', 'Ед.изм.': ' '}
+#     b = input('Введите НАЗВАНИЕ товара: ')
+#     my_dict.update({'Название':b})
+#     c = input('Введите цену товара: ')
+#     my_dict.update({'Цена':c})
+#     d = input('Введите количество товара: ')
+#     my_dict.update({'Количество':d})
+#     e = input('Введите ед.изм. товара: ')
+#     my_dict.update({'Ед.изм.':e})
+#     my_korteg = (i, my_dict)
+#     i += 1
+#     my_list_fin.append(my_korteg)
+#     my_dict_new.append(my_dict)
+# print(my_list_fin)
+# print(my_dict_new)
+# resultdict = [{}]
+# for x in my_dict_new:
+#     for y in x:
+#         if y in resultdict[0]:
+#             resultdict[0][y].append(x[y])
+#             resultdict[0][y].sort()
+#         else:
+#             resultdict[0][y]=[x[y]]
+# f = list(set(resultdict[0].get('Ед.изм.')))
+# resultdict[0].update({'Ед.изм.':f})
+# print(resultdict)
+
+# Комментарий для GITHub
