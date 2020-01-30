@@ -1,0 +1,3 @@
+Hello, wolrd!
+My name is Slava.
+I'm studying it now the 'Start to Python'.
